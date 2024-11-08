@@ -1,0 +1,11 @@
+runtime: python39  # You can change this if using a different runtime
+
+handlers:
+  # Serve static files (images, JS, CSS, etc.) from the 'static' folder
+  - url: /static
+    static_dir: static
+
+  # Serve the main HTML file
+  - url: /
+    static_files: index.html
+    upload: index.html
