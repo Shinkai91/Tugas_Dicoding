@@ -1,0 +1,135 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 22px;
+  color: #555;
+}
+
+.about,
+.skills,
+.hobbies {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.about h3,
+.skills h3,
+.hobbies h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.about p,
+.skills ul,
+.hobbies ul {
+  color: #666;
+  line-height: 1.6;
+}
+
+.skills ul,
+.hobbies ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li,
+.hobbies li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile h2 {
+    font-size: 20px;
+  }
+
+  .about h3,
+  .skills h3,
+  .hobbies h3 {
+    font-size: 16px;
+  }
+
+  .skills li,
+  .hobbies li {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
